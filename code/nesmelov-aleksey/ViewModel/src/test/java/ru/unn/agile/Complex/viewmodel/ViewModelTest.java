@@ -1,5 +1,6 @@
 package test.java.ru.unn.agile.Complex.viewmodel;
 
+import ru.unn.agile.Complex.viewmodel.FakeLogger;
 import ru.unn.agile.Complex.viewmodel.Operation;
 import ru.unn.agile.Complex.viewmodel.ViewModel;
 import org.junit.After;
@@ -14,7 +15,7 @@ public class ViewModelTest {
 
     @Before
     public void setUp() {
-        viewModel = new ViewModel();
+        viewModel = new ViewModel(new FakeLogger());
     }
 
     @After
