@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 <?import ru.unn.agile.Complex.viewmodel.*?>
-<AnchorPane prefHeight="295.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.unn.agile.Complex.view.ComplexCalculator">
-    <fx:define>
-        <ViewModel fx:id="viewModel" ></ViewModel>
-    </fx:define>
+
+<AnchorPane prefHeight="428.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.unn.agile.Complex.view.ComplexCalculator">
+   <fx:define>
+      <ComplexViewModel fx:id="viewModel" />
+   </fx:define>
    <children>
       <TextField fx:id="firstRealTextField" layoutX="173.0" layoutY="41.0" prefHeight="25.0" prefWidth="132.0" />
       <TextField fx:id="firstImaginaryTextField" layoutX="374.0" layoutY="41.0" prefHeight="25.0" prefWidth="132.0" />
@@ -23,8 +25,9 @@
       <Text layoutX="21.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result Complex Number:" />
       <Text layoutX="413.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imaginary" />
       <Text layoutX="227.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Real" />
-      <Text fx:id="resultText" layoutX="177.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="335.0"/>
+      <Text fx:id="resultText" layoutX="177.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="335.0" />
       <Text layoutX="177.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Errors:" />
-      <Text fx:id="errorsText" layoutX="227.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="283.13671875"/>
+      <Text fx:id="errorsText" layoutX="227.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="283.13671875" />
+      <TextArea fx:id="logArea" layoutX="21.0" layoutY="291.0" prefHeight="129.0" prefWidth="498.0" editable="false" text="Log" />
    </children>
 </AnchorPane>

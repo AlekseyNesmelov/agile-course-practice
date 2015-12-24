@@ -178,6 +178,8 @@ include "code/nesmelov-aleksey/View"
 project(":code/nesmelov-aleksey/View").name = "nesmelov-aleksey-View"
 include "code/nesmelov-aleksey/ViewModel"
 project(":code/nesmelov-aleksey/ViewModel").name = "nesmelov-aleksey-ViewModel"
+include "code/nesmelov-aleksey/Infrastructure"
+project(":code/nesmelov-aleksey/Infrastructure").name = "nesmelov-aleksey-Infrastructure"
 // Nikolaev Kirill
 include "code/nikolaev-kirill/Model"
 project(":code/nikolaev-kirill/Model").name = "nikolaev-kirill-Model"
